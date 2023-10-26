@@ -7,4 +7,4 @@ Data from VOC2012 is available at (http://host.robots.ox.ac.uk/pascal/VOC/voc201
 
 Additional data sets supporting the findings of this study were not publicly available due to the confidential policy of National Health Commission of China,  but are available from the corresponding authors upon reasonable request. 
 
-![Alt Text](relative/path/to/your/gif.gif)
+![Alt Text](Demo/UIOS_gif.gif)
