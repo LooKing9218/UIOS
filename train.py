@@ -96,7 +96,7 @@ def train(train_loader, val_loader, test_loader, model, optimizer, criterion,wri
     step = 0
     best_auc = 0.0
     best_auc_Test = 0.0
-    for epoch in range(1,args.num_epochs+1):
+    for epoch in range(0,args.num_epochs+1):
         model.train()
         labels = []
         outputs = []
@@ -118,7 +118,7 @@ def train(train_loader, val_loader, test_loader, model, optimizer, criterion,wri
             E = alpha[0] - 1
             b = E / (S.expand(E.shape))
 
-            Tem_Coef = (epoch / args.num_epochs)*0.01
+            Tem_Coef = epoch*(0.99/args.num_epochs)+0.01
 
             loss_CE = criterion(b/Tem_Coef, cls_label)
 
